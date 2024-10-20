@@ -4,4 +4,4 @@ ClimCast is a sophisticated weather forecasting application designed to provide 
 
 Deployed Site: WeatherWise Deployed Application
 Project Blog Article: Final Project Blog Article
-Author 1 LinkedIn: Your LinkedIn Profile Author 2 LinkedIn: Your LinkedIn Profile
+Author 1 LinkedIn: Your LinkedIn Profile Author 2 LinkedIn: Your LinkedInProfile   Author 2 LinkedIn: Your LinkedIn Profile
