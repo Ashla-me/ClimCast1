@@ -1,6 +1,4 @@
 from flask import Flask, render_template, request, redirect, url_for
-import requests
-
 app = Flask(__name__, template_folder='web_static/templates',
             static_folder='web_static/static')
 
