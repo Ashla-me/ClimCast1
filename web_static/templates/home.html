@@ -3,22 +3,25 @@
 <head>
     <style>
         body {
-            background-image: url("{{ url_for('static', filename='images/background.jpeg') }}");
+            background-image: url("{{ url_for('static', filename='images/background.png') }}");
         background-size: cover;
         background-position: center;
+        background-repeat: no-repeat;
         }
     </style>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ClimCast</title>
+    <link rel="icon" href="../static/images/logo-favicons/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" type="text/css" href="../static/styles/home.css">
+
 </head>
 <body>
     <!-- Header -->
     <header>
         <div class="container">
             <div class="branding">
-                <img src="../static/images/my_weather.jpeg" alt="ClimCast Logo" class="logo">
+                <img src="..\static\images\climcast_logo.png" alt="ClimCast Logo" class="logo">
                 <h3>ClimCast</h3>
             </div>
         </div>
@@ -26,6 +29,12 @@
     </div>
         </div>
     </header>
+
+    <div class="hero">
+        <div class="container">
+            <h1>Get the latest weather updates <br>for your location.</h1>
+        </div>
+    </div>
 
     <!-- Hero Section -->
     <section class="form-section">
@@ -40,6 +49,12 @@
 
         </div>
     </section>
+
+    <div class="softcloud">
+        <div class="container">
+            <img src="..\static\images\location-cloud.png" alt="location icon" class="softcloud">
+        </div>
+    </div>
 
     <!-- Features Section -->
     <section id="features">
@@ -85,6 +100,5 @@
         </div>
     </footer>
 
-    <script src="scripts.js"></script>
 </body>
 </html>
