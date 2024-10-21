@@ -29,43 +29,12 @@ The backend of ClimCast is built using Flask, a lightweight Python web framework
 - **API Integration:** Weather data is fetched from the WeatherAPI using the API key, and the JSON response is parsed to extract relevant information.
 - **Templates:** The app uses HTML templates located in the `web_static/templates` directory, with static assets (CSS, icons) stored in `web_static/static`.
 
-```python
-@app.route('/')
-def home():
-    return render_template('home.html')
-
-@app.route('/submit_city', methods=['POST'])
-def submit_city():
-    city = request.form.get('city')
-    return redirect(url_for('get_weather', city=city))
-
-@app.route('/weather/<city>')
-def get_weather(city):
-    api_key = '442d038d4f21480a8f5155320240606'
-    url = f"http://api.weatherapi.com/v1/forecast.json?key={api_key}&q={city}&days=2&aqi=no&alerts=no"
-    response = requests.get(url)
-    weather_data = response.json()
-    
-    if 'error' not in weather_data:
-        weather = {
-            'city': weather_data['location']['name'],
-            'country': weather_data['location']['country'],
-            'temperature': weather_data['current']['temp_c'],
-            'condition': weather_data['current']['condition']['text'],
-            'icon': weather_data['current']['condition']['icon'],
-            'forecast': weather_data['forecast']['forecastday']
-        }
-        return render_template('result.html', weather=weather)
-    else:
-        return render_template('home.html', error='City not found')
-```
-
 ## Installation and Setup
 To run ClimCast locally, follow the steps below:
 
 1. Clone the repository:
    ```bash
-   git clone <https://github.com/Ashla-me/ClimCast1>
+   git clone [ClimCast Repository](https://github.com/Ashla-me/ClimCast1)
    ```
 
 2. Navigate to the project directory:
