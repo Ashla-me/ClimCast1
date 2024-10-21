@@ -7,7 +7,7 @@ ClimCast is a web-based weather forecasting application that provides users with
 - **City-based Weather Search:** Users can enter a city name to retrieve its current weather and forecast.
 - **Real-time Weather Data:** Fetches real-time weather conditions, including temperature, weather condition, and an icon for easy visualization.
 - **Two-day Forecast:** Provides a short-term weather forecast for better planning.
-- **Error Handling:** Alerts users if the entered city is not found.
+- **Error Handling:** Alerts users if the entered city is not found or available.
 
 ## Technologies Used
 - **Frontend:** HTML, CSS
