@@ -34,7 +34,7 @@ To run ClimCast locally, follow the steps below:
 
 1. Clone the repository:
    ```bash
-   git clone (`[ClimCast Repository](https://github.com/Ashla-me/ClimCast1)`)
+   git clone `https://github.com/Ashla-me/ClimCast1`
    ```
 
 2. Navigate to the project directory:
