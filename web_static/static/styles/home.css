@@ -58,7 +58,7 @@ input[type="text"] {
 
 .form-section {
     position: relative;
-    background: url('../images/nowweather.jpg') no-repeat center center/cover;
+    background: url('../images/weather.jpeg') no-repeat center center/cover;
     background-position: center;
     color: #fff;
     height: 70vh;
